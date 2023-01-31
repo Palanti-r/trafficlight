@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         setColorYellow(0.3)
         viewGreen.layer.cornerRadius = 50.0
         setColorGreen(0.3)
+        toggleButton.layer.cornerRadius = 10
+        toggleButton.setTitle("START", for: .normal)
     }
     
     func setColorRed(_ alpha: CGFloat) {
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
     func setColorGreen(_ alpha: CGFloat) {
         viewGreen.backgroundColor = UIColor.green.withAlphaComponent(alpha)
     }
+    
 
 
 }
