@@ -42,6 +42,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="toggleOfLight" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lbc-HA-GNE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
