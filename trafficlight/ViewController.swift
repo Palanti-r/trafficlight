@@ -17,11 +17,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewRed.layer.cornerRadius = 50.0
-        viewRed.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+        setColorRed(0.3)
         viewYellow.layer.cornerRadius = 50.0
-        viewYellow.backgroundColor = UIColor.yellow.withAlphaComponent(0.2)
+        setColorYellow(0.3)
         viewGreen.layer.cornerRadius = 50.0
-        viewGreen.backgroundColor = UIColor.green.withAlphaComponent(0.2)
+        setColorGreen(0.3)
+    }
+    
+    func setColorRed(_ alpha: CGFloat) {
+        viewRed.backgroundColor = UIColor.red.withAlphaComponent(alpha)
+    }
+    
+    func setColorYellow(_ alpha: CGFloat) {
+        viewYellow.backgroundColor = UIColor.yellow.withAlphaComponent(alpha)
+    }
+    
+    func setColorGreen(_ alpha: CGFloat) {
+        viewGreen.backgroundColor = UIColor.green.withAlphaComponent(alpha)
     }
 
 
