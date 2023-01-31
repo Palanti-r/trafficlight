@@ -16,7 +16,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewRed.layer.cornerRadius = 50.0
+        viewRed.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+        viewYellow.layer.cornerRadius = 50.0
+        viewYellow.backgroundColor = UIColor.yellow.withAlphaComponent(0.2)
+        viewGreen.layer.cornerRadius = 50.0
+        viewGreen.backgroundColor = UIColor.green.withAlphaComponent(0.2)
     }
 
 
